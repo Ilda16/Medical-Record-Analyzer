@@ -1,0 +1,16 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+
+# Model checkpoints / temp data
+*.bin
+*.pkl
+*.pt
+*.ckpt
+
+# Hugging Face cache
+.cache/
+hub/
