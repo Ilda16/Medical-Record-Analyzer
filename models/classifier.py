@@ -1,16 +1,26 @@
 from transformers import pipeline
 
-# Try a general biomedical model
-model_name = "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract"
+#zero-shot classifier model
+classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
 
-classifier = pipeline("text-classification", model=model_name)
+def classify_specialties(text):
+    # Define your medical specialty labels
+    labels = [
+        "Pulmonology",
+        "Cardiology",
+        "Psychiatry",
+        "Neurology",
+        "Oncology",
+        "Endocrinology",
+        "Infectious Disease",
+        "Primary Care"
+    ]
 
-def classify_specialties(text, threshold=0.5):
-    """Classify medical notes using a general biomedical classifier (placeholder behavior)."""
-    result = classifier(text)
+    result = classifier(text, candidate_labels=labels, multi_label=True)
+
+    # Return labels and scores as a list of dicts
     return [
-        {
-            "label": result[0]["label"],
-            "score": round(result[0]["score"], 3)
-        }
+        {"label": label, "score": round(score, 3)}
+        for label, score in zip(result["labels"], result["scores"])
+        if score >= 0.3  # Optional threshold
     ]

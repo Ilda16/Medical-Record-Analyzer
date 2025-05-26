@@ -1,0 +1,21 @@
+{
+    "timestamp": "2025-05-25T18:48:01.293087",
+    "summary": "Annual check-up. No complaints... No complaints.",
+    "entities": [
+        {
+            "entity": "Detailed_description",
+            "word": "annual",
+            "score": 0.574999988079071
+        }
+    ],
+    "specialties": [
+        {
+            "label": "Primary Care",
+            "score": 0.624
+        }
+    ],
+    "audit_alerts": [
+        " No allergy information mentioned.",
+        "No medications mentioned."
+    ]
+}

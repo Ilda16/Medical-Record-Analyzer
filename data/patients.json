@@ -1,0 +1,21 @@
+[
+  {
+    "patient_id": "001",
+    "name": "Ilda Martinez",
+    "date": "2024-05-01",
+    "note": "Patient presents with shortness of breath..."
+  },
+  {
+    "patient_id": "002",
+    "name": "Bruce Wayne",
+    "date": "2024-05-03",
+    "note": "Patient reports feeling depressed..."
+  },
+  {
+    "patient_id": "003",
+    "name": "Peter Parker",
+    "date": "2024-05-04",
+    "note": "Annual check-up. No complaints..."
+  }
+]
+

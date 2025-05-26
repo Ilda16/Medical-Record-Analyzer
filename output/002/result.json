@@ -1,0 +1,27 @@
+{
+    "timestamp": "2025-05-25T18:47:59.509097",
+    "summary": "Patient reports feeling depressed. Patient reports feeling suicidal. Patient reported feeling depressed...",
+    "entities": [
+        {
+            "entity": "Sign_symptom",
+            "word": "depressed",
+            "score": 0.9980000257492065
+        }
+    ],
+    "specialties": [
+        {
+            "label": "Psychiatry",
+            "score": 0.924
+        },
+        {
+            "label": "Primary Care",
+            "score": 0.83
+        }
+    ],
+    "audit_alerts": [
+        " No allergy information mentioned.",
+        " Psychiatric symptom noted, but no referral detected.",
+        "No medications mentioned.",
+        " Classified as psychiatric, but no psych-related terms found."
+    ]
+}

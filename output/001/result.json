@@ -1,0 +1,34 @@
+{
+    "timestamp": "2025-05-25T18:47:57.534977",
+    "summary": "Patient presents with shortness of breath...",
+    "entities": [
+        {
+            "entity": "Sign_symptom",
+            "word": "shortness of breath",
+            "score": 1.0
+        }
+    ],
+    "specialties": [
+        {
+            "label": "Pulmonology",
+            "score": 0.892
+        },
+        {
+            "label": "Primary Care",
+            "score": 0.88
+        },
+        {
+            "label": "Cardiology",
+            "score": 0.763
+        },
+        {
+            "label": "Psychiatry",
+            "score": 0.723
+        }
+    ],
+    "audit_alerts": [
+        " No allergy information mentioned.",
+        "No medications mentioned.",
+        " Classified as psychiatric, but no psych-related terms found."
+    ]
+}

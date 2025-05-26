@@ -1,0 +1,54 @@
+{
+    "timestamp": "2025-05-25T15:41:54.583562",
+    "summary": "Patient presents with shortness of breath, mild fever, and persistent cough. History of asthma. Prescribed Albuterol and advised follow-up in 1 week.",
+    "entities": [
+        {
+            "entity": "Sign_symptom",
+            "word": "shortness of breath",
+            "score": 1.0
+        },
+        {
+            "entity": "Severity",
+            "word": "mild",
+            "score": 1.0
+        },
+        {
+            "entity": "Detailed_description",
+            "word": "persistent",
+            "score": 1.0
+        },
+        {
+            "entity": "Medication",
+            "word": "albu",
+            "score": 0.9929999709129333
+        },
+        {
+            "entity": "Medication",
+            "word": "##terol",
+            "score": 0.9869999885559082
+        },
+        {
+            "entity": "Clinical_event",
+            "word": "follow",
+            "score": 1.0
+        },
+        {
+            "entity": "Clinical_event",
+            "word": "up",
+            "score": 0.6880000233650208
+        }
+    ],
+    "specialties": [
+        {
+            "label": "Pulmonology",
+            "score": 0.908
+        },
+        {
+            "label": "Primary Care",
+            "score": 0.881
+        }
+    ],
+    "audit_alerts": [
+        "No allergy information mentioned."
+    ]
+}
