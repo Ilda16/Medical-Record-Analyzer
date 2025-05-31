@@ -1,4 +1,5 @@
 {
-  "patient_id": "12345",
-  "note": "Patient presents with shortness of breath, mild fever, and persistent cough. History of asthma. Prescribed Albuterol and advised follow-up in 1 week."
+  "patient_id": "RX12345",
+  "clinical_note": "Patient reports chest pain and shortness of breath. Referred to cardiology for evaluation and possible EKG."
 }
+
