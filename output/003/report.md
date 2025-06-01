@@ -1,6 +1,6 @@
 # Patient Summary Report
 
-**Date:** 2025-05-30 18:03
+**Date:** 2025-05-31 12:45
 
 ## Summary
 > Annual check-up. No complaints... No complaints.
@@ -12,5 +12,6 @@
 - Primary Care (Score: 0.624)
 
 ## Audit Alerts
- No allergy information mentioned.
-No medications mentioned.
+No allergy information mentioned.
+No medications mentioned in the record.
+No diagnosed condition or disease mentioned.

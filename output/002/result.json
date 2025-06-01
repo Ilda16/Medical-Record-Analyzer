@@ -1,5 +1,5 @@
 {
-    "timestamp": "2025-05-30T18:03:47.576170",
+    "timestamp": "2025-05-31T12:45:00.174493",
     "summary": "Patient reports feeling depressed. Patient reports feeling suicidal. Patient reported feeling depressed...",
     "entities": [
         {
@@ -19,9 +19,10 @@
         }
     ],
     "audit_alerts": [
-        " No allergy information mentioned.",
-        " Psychiatric symptom noted, but no referral detected.",
-        "No medications mentioned.",
-        " Classified as psychiatric, but no psych-related terms found."
+        "No allergy information mentioned.",
+        "Psychiatric symptom noted (e.g. suicidal), but no referral detected.",
+        "No medications mentioned in the record.",
+        "Classified as psychiatric, but no psychiatric-related terms found.",
+        "No diagnosed condition or disease mentioned."
     ]
 }

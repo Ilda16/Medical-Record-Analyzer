@@ -1,4 +1,4 @@
 patient_id,name,date,summary_preview,top_specialties,alert_count,alert_preview
-001,Ilda Martinez,2024-05-01,Patient presents with shortness of breath...,"Pulmonology, Primary Care",3, No allergy information mentioned.
-002,Bruce Wayne,2024-05-03,Patient reports feeling depressed. Patient reports feeling suicidal. Patient rep...,"Psychiatry, Primary Care",4, No allergy information mentioned.
-003,Peter Parker,2024-05-04,Annual check-up. No complaints... No complaints.,Primary Care,2, No allergy information mentioned.
+001,Ilda Martinez,2024-05-01,Patient presents with shortness of breath...,"Pulmonology, Primary Care",4,No allergy information mentioned.
+002,Bruce Wayne,2024-05-03,Patient reports feeling depressed. Patient reports feeling suicidal. Patient rep...,"Psychiatry, Primary Care",5,No allergy information mentioned.
+003,Peter Parker,2024-05-04,Annual check-up. No complaints... No complaints.,Primary Care,3,No allergy information mentioned.

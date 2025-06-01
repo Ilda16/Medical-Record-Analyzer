@@ -1,28 +1,33 @@
 def run_audit(summary, entities, specialties):
-
     alerts = []
 
-    # No allergy info
-    if not any("allergy" in e["word"].lower() for e in entities):
-        alerts.append(" No allergy information mentioned.")
+    # No allergy info in NER or summary
+    has_allergy = any("allergy" in e["word"].lower() for e in entities) or "allergy" in summary.lower()
+    if not has_allergy:
+        alerts.append("No allergy information mentioned.")
 
     # Psych risk with no referral
     if "suicidal" in summary.lower():
         if not any("psych" in e["word"].lower() for e in entities):
-            alerts.append(" Psychiatric symptom noted, but no referral detected.")
+            alerts.append("Psychiatric symptom noted (e.g. suicidal), but no referral detected.")
 
-    # SSN-like numbers detected
+    # SSN-like pattern
     if any(e["word"].replace("-", "").isdigit() and len(e["word"].replace("-", "")) == 9 for e in entities):
-        alerts.append("Possible SSN detected in note.")
+        alerts.append("Possible SSN or sensitive ID detected in note.")
 
-    # No medications
+    # No medications detected
     if not any(e["entity"].lower() == "medication" for e in entities):
-        alerts.append("No medications mentioned.")
+        alerts.append("No medications mentioned in the record.")
 
-    # Specialty: if Psychiatry is high but no psych entity found
+    # Classified as psychiatric, but no psych-related entity found
     specialty_labels = [s["label"].lower() for s in specialties]
     if "psychiatry" in specialty_labels and not any("psych" in e["word"].lower() for e in entities):
-        alerts.append(" Classified as psychiatric, but no psych-related terms found.")
+        alerts.append("Classified as psychiatric, but no psychiatric-related terms found.")
+
+    # No diagnosis or condition mention (basic check)
+    if not any(e["entity"].lower() in ["condition", "diagnosis"] for e in entities):
+        alerts.append("No diagnosed condition or disease mentioned.")
 
     return alerts
+
 

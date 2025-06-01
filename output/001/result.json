@@ -1,5 +1,5 @@
 {
-    "timestamp": "2025-05-30T18:03:45.590275",
+    "timestamp": "2025-05-31T12:44:57.916112",
     "summary": "Patient presents with shortness of breath...",
     "entities": [
         {
@@ -27,8 +27,9 @@
         }
     ],
     "audit_alerts": [
-        " No allergy information mentioned.",
-        "No medications mentioned.",
-        " Classified as psychiatric, but no psych-related terms found."
+        "No allergy information mentioned.",
+        "No medications mentioned in the record.",
+        "Classified as psychiatric, but no psychiatric-related terms found.",
+        "No diagnosed condition or disease mentioned."
     ]
 }

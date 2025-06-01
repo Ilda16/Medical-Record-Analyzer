@@ -1,6 +1,6 @@
 # Patient Summary Report
 
-**Date:** 2025-05-30 18:03
+**Date:** 2025-05-31 12:45
 
 ## Summary
 > Patient reports feeling depressed. Patient reports feeling suicidal. Patient reported feeling depressed...
@@ -13,7 +13,8 @@
 - Primary Care (Score: 0.83)
 
 ## Audit Alerts
- No allergy information mentioned.
- Psychiatric symptom noted, but no referral detected.
-No medications mentioned.
- Classified as psychiatric, but no psych-related terms found.
+No allergy information mentioned.
+Psychiatric symptom noted (e.g. suicidal), but no referral detected.
+No medications mentioned in the record.
+Classified as psychiatric, but no psychiatric-related terms found.
+No diagnosed condition or disease mentioned.

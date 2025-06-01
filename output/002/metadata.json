@@ -1,1 +1,5 @@
-{"patient_id": "002", "name": "Bruce Wayne", "date": "2024-05-03"}
+{
+    "patient_id": "002",
+    "name": "Bruce Wayne",
+    "date": "2024-05-03"
+}

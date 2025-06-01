@@ -1,5 +1,5 @@
 {
-    "timestamp": "2025-05-30T18:03:49.407642",
+    "timestamp": "2025-05-31T12:45:02.284886",
     "summary": "Annual check-up. No complaints... No complaints.",
     "entities": [
         {
@@ -15,7 +15,8 @@
         }
     ],
     "audit_alerts": [
-        " No allergy information mentioned.",
-        "No medications mentioned."
+        "No allergy information mentioned.",
+        "No medications mentioned in the record.",
+        "No diagnosed condition or disease mentioned."
     ]
 }

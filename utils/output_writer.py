@@ -1,4 +1,5 @@
 import json
+import os
 from datetime import datetime
 
 def save_output(summary, entities, specialties, audit_alerts, out_path="output/result.json"):
@@ -9,7 +10,7 @@ def save_output(summary, entities, specialties, audit_alerts, out_path="output/r
         "specialties": specialties,  
         "audit_alerts": audit_alerts
     }
-
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with open(out_path, "w") as f:
         json.dump(result, f, indent=4)
 
